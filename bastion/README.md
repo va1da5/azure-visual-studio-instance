@@ -6,8 +6,11 @@ The Azure Bastion service is a new fully platform-managed PaaS service that you 
 
 ```bash
 # In order to provide values to the Terraform variables use the following
-export TF_VAR_admin_username=bob
-export TF_VAR_admin_password=Sup3r_S3cr3t!
+export TF_VAR_admin_username=$(whoami)
+export TF_VAR_admin_password=$(openssl rand -base64 12)
+
+# View random password value
+echo $TF_VAR_admin_password
 ```
 
 ## References

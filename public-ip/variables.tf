@@ -14,7 +14,6 @@ variable "location" {
 
 variable "admin_username" {
   description = "Username for the Administrator account"
-  default     = "adminuser"
 }
 
 variable "admin_password" {
